@@ -1,0 +1,26 @@
+function FizzBuzz(n){
+    const res =[]
+    let sum=0
+    
+    while (n != 0) {
+        sum = sum + n % 10;
+        n = parseInt(n / 10);
+    }
+    
+    
+    let i=1
+    for(i=1;i<=sum;i++){
+        if(i%4==0 && i%5==0)
+            res.push("Fizzbuzz")
+        else if(i%4==0)
+            res.push("Fizz")
+        else if(i%5==0)  
+            res.push("Buzz")
+        else 
+            res.push(i)
+    }
+    
+    return res
+}
+
+console.log(FizzBuzz(9871599423))
